@@ -1,0 +1,51 @@
+.help{
+    &__left{
+        text-align: center;
+        img {
+            width: 23.438rem;
+            height: auto;
+        }
+    }
+    &__right {
+        padding: 3.125rem;
+        h2 {
+            text-align: center;
+            font-size: 1.875rem;
+            padding-bottom: 2.5rem;
+        }
+        p {
+            font-size: 1rem;
+            padding-bottom: 3.125rem;
+        }
+        .button {
+            width: max-content;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .help {
+        padding: 9.375rem 4.4375rem 0;
+        &__left{
+            img{
+                width: 40.375rem;
+                height: auto;
+            }
+        }
+        &__right {
+            padding: 1.875rem 0 1.375rem 5rem;
+            max-width: 34.4375rem;
+            h2 {
+                font-size: 3.125rem;
+                text-align: left;
+            }
+            p {
+                font-size: 1.25rem;
+                padding-bottom: 3.125rem;
+            }
+            .button {
+                margin: inherit;
+            }
+        }
+    }
+}
