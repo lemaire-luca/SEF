@@ -3,7 +3,7 @@
 <?php if (have_posts()): while (have_posts()): the_post(); ?>
 <section id="don" class="don">
     <div class="landing-illustration">
-        <h2><?= get_field('landing-title')?></h2>
+        <h2 role="heading" aria-level="2"><?= get_field('landing-title')?></h2>
         <img src="<?= get_field('landing-illustration')?>" alt="">
     </div>
 </section>
@@ -19,7 +19,7 @@
                         ?>
                     <article class="option-don__container">
                         <div class="option-don__container__left">
-                            <h3><?= $title?></h3>
+                            <h3 role="heading" aria-level="3"><?= $title?></h3>
                             <p><?= $text?></p>
                             <p><?= $description?></p>
                             <a class="button" href="<?= $link?>"><?= $name?></a>
