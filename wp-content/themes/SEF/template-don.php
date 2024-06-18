@@ -8,64 +8,28 @@
     </div>
 </section>
     <section id="option-don" class="option-don">
-        <div class="option-don__container">
-            <article class="option-don__container__article">
-                <div class="option-don__container__article__left">
-                    <h3>Don monétaire</h3>
-                    <p>
-                        Pour faire un don par virement bancaire, veuillez utiliser les
-                        informations de compte suivantes :
-                    </p>
-                    <a class="button" href="">Faire un don</a>
-                </div>
-                <div class="option-don__container__article__right">
-                    <img src="img/don-monétaire.png" alt="" width="611" height="423">
-                </div>
-            </article>
-            <article class="option-don__container__article">
-                <div class="option-don__container__article__left">
-                    <h3>Don matériel</h3>
-                    <p>
-                        Pour faire un don matériel, vous pouvez vous rendre au Dépôt de Huy.
-                    </p>
-                    <a class="button" href="">Faire un don</a>
-                </div>
-                <div class="option-don__container__article__right">
-                    <img src="img/don-matériel.png" alt="" width="611" height="423">
-                </div>
-            </article>
-            <article class="option-don__container__article">
-                <div class="option-don__container__article__left">
-                    <h3>Leg</h3>
-                    <p>
-                        Pour faire un leg, veuillez vous rendre dans le formulaire de contact
-                        afin de nous communiquez votre intérêt  :
-                    </p>
-                    <p>
-                        Qu’est-ce que le leg: le leg est une disposition testamentaire
-                        où une personne, appelée le testateur, désigne un bénéficiaire,
-                        appelé le légataire, pour recevoir un bien spécifique ou une somme
-                        d'argent après son décès.
-                    </p>
-                    <a class="button" href="">Faire un don</a>
-                </div>
-                <div class="option-don__container__article__right">
-                    <img src="img/leg.png" alt="" width="611" height="423">
-                </div>
-            </article>
-            <article class="option-don__container__article">
-                <div class="option-don__container__article__left">
-                    <h3>Devenir bénévole</h3>
-                    <p>
-                        Pour faire devenir bénévole, vous pouvez nous contactez pour plus de renseignement.
-                    </p>
-                    <a class="button" href="">Nous rejoindre</a>
-                </div>
-                <div class="option-don__container__article__right">
-                    <img src="img/bénévolat.png" alt="" width="611" height="423">
-                </div>
-            </article>
-        </div>
+                <?php if (have_rows('option-don')) :
+                    while (have_rows('option-don')) :the_row();
+                        $text = get_sub_field('text');
+                        $title = get_sub_field('title');
+                        $link = get_sub_field('link');
+                        $image = get_sub_field('image');
+                        $name = get_sub_field('name');
+                        $description = get_sub_field('description');
+                        ?>
+                    <article class="option-don__container">
+                        <div class="option-don__container__left">
+                            <h3><?= $title?></h3>
+                            <p><?= $text?></p>
+                            <p><?= $description?></p>
+                            <a class="button" href="<?= $link?>"><?= $name?></a>
+                        </div>
+                        <div class="option-don__container__right">
+                            <img src="<?= $image?>" alt="">
+                        </div>
+                    </article>
+                    <?php endwhile;
+                endif; ?>
     </section>
 <?php endwhile; endif; ?>
 <?php get_footer(); ?><?php
