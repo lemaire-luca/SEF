@@ -41,7 +41,8 @@ unset($_SESSION['form_errors']);
     </div>
     <div class="message">
         <label for="message">Message</label>
-        <textarea name="message" id="message" cols="30" rows="5" placeholder="J'aimerai vous venir en aide..." required></textarea>
+        <textarea name="message" id="message" cols="30" rows="5" placeholder="J'aimerai vous venir en aide..."
+                  required></textarea>
         <?php if (!empty($errors)): ?>
             <p class="form-error"><?php echo $errors['message'] ?? ''; ?></p>
         <?php endif; ?>

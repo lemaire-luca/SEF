@@ -1,24 +1,28 @@
-.information{
+.information {
   padding: 3.125rem 1.25rem 6.25rem;
   text-align: center;
   background-color: #DCECFC;
-  h2{
+
+  h2 {
     padding-bottom: 3.75rem;
     font-size: 2.1875rem;
   }
-  p{
+
+  p {
     font-size: 1rem;
   }
 }
 
 @media (min-width: 1200px) {
-  .information{
+  .information {
     padding: 7.3125rem 14.375rem;
     margin-top: 11.875rem;
-    h2{
+
+    h2 {
       font-size: 3.75rem;
     }
-    p{
+
+    p {
       font-size: 1.25rem;
     }
   }

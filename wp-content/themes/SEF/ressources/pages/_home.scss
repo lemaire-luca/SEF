@@ -1,64 +1,75 @@
-.home{
+.home {
+  display: flex;
+  flex-direction: column;
+  padding: 3.125rem 0.9375rem;
+  row-gap: 2.5rem;
+
+  &__container {
     display: flex;
     flex-direction: column;
-    padding: 3.125rem 0.9375rem;
-    row-gap: 2.5rem;
-    &__container{
-        display: flex;
-        flex-direction: column;
-        background-color: #F5F5F5;
-        border-radius: 1.8125rem;
-        &__infos{
-            padding: 1.5625rem 2rem ;
-            h2{
-                font-size: 1.875rem;
-                padding: 0 0 2.8125rem;
-            }
-            p{
-                padding-bottom: 1.875rem;
-            }
-            .button{
-                width: max-content;
-                display: inline-block;
-            }
-        }
-        &__img{
-            img{
-                padding: 2.1875rem 3.1875rem;
-                width: 15.1875rem;
-                height: auto;
-            }
-        }
+    background-color: #F5F5F5;
+    border-radius: 1.8125rem;
+
+    &__infos {
+      padding: 1.5625rem 2rem;
+
+      h2 {
+        font-size: 1.875rem;
+        padding: 0 0 2.8125rem;
+      }
+
+      p {
+        padding-bottom: 1.875rem;
+      }
+
+      .button {
+        width: max-content;
+        display: inline-block;
+      }
     }
+
+    &__img {
+      img {
+        padding: 2.1875rem 3.1875rem;
+        width: 15.1875rem;
+        height: auto;
+      }
+    }
+  }
 }
 
 @media (min-width: 1200px) {
-    .home{
-        padding: 0 4.4375rem 9.375rem;
-        row-gap: 5rem;
-        &__container{
-            padding: 3rem 9.375rem;
-            display: flex;
-            flex-direction: row;
-            column-gap: 6.25rem;
-            flex: 1;
-            &__infos{
-                padding: 0;
-                h2{
-                    font-size: 2.8125rem;
-                    padding: 6.25rem 0 2.5rem;
-                }
-                .button{
-                    display: inline-flex;
-                }
-            }
-            &__img{
-                img{
-                    padding: 0;
-                    width: 27.9375rem;
-                    height: auto;
-                }
-            }
+  .home {
+    padding: 0 4.4375rem 9.375rem;
+    row-gap: 5rem;
+
+    &__container {
+      padding: 3rem 9.375rem;
+      display: flex;
+      flex-direction: row;
+      column-gap: 6.25rem;
+      flex: 1;
+
+      &__infos {
+        padding: 0;
+
+        h2 {
+          font-size: 2.8125rem;
+          padding: 6.25rem 0 2.5rem;
         }
+
+        .button {
+          display: inline-flex;
+        }
+      }
+
+      &__img {
+        img {
+          padding: 0;
+          width: 27.9375rem;
+          height: auto;
+        }
+      }
     }
+  }
 }

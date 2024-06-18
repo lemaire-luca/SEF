@@ -6,8 +6,10 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="author" content="">
     <meta name="title" content="Luca Lemaire">
-    <meta name="keywords" content="site-client, SEF Huy, Front-end, Back-end, Fullstack, Développeur web, étudiant à l'HEPL, Développeur Wordpress">
-    <meta name="description" content="Il s’agit d'un site web créer spécialement pour une asbl (SEF Huy) qui a grandement besoin de revoir la direction artistique de son site actuel. Se site va permettre de se renseigner sur l'asbl, connaitre ces valeurs et ses engagments tout en ayant la possbilité de leur venir en aide par leurs différenet moyen">
+    <meta name="keywords"
+          content="site-client, SEF Huy, Front-end, Back-end, Fullstack, Développeur web, étudiant à l'HEPL, Développeur Wordpress">
+    <meta name="description"
+          content="Il s’agit d'un site web créer spécialement pour une asbl (SEF Huy) qui a grandement besoin de revoir la direction artistique de son site actuel. Se site va permettre de se renseigner sur l'asbl, connaitre ces valeurs et ses engagments tout en ayant la possbilité de leur venir en aide par leurs différenet moyen">
     <meta property="profile:first_name" content="Luca">
     <meta property="profile:last_name" content="Lemaire">
     <title>
@@ -28,13 +30,13 @@
 <header id="navigation" class="navigation">
     <h2 class="hidden" role="heading" aria-level="2">Navigation principale</h2>
     <nav role="navigation">
-    <input type="checkbox" id="burger-toggle">
-    <label for="burger-toggle" class="burger_menu" id="burger-menu">
-        <span></span>
-        <span></span>
-        <span></span>
-    </label>
-        <a href="<?= get_field('logo-link', 'option')?>">
+        <input type="checkbox" id="burger-toggle">
+        <label for="burger-toggle" class="burger_menu" id="burger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <a href="<?= get_field('logo-link', 'option') ?>">
             <p><abbr title="Service d'entraide familiale">SEF</abbr></p>
         </a>
         <ul class="navigation__list">
@@ -51,7 +53,9 @@
         </ul>
     </nav>
     <div class="navigation__button">
-        <a class="button" href="<?= get_field('soutiens-button', 'option')?>"><?= get_field('soutiens-button-name', 'option')?></a>
-        <a class="button-white" href="<?= get_field('magasin-button', 'option')?>"><?= get_field('magasin-button-name', 'option')?></a>
+        <a class="button"
+           href="<?= get_field('soutiens-button', 'option') ?>"><?= get_field('soutiens-button-name', 'option') ?></a>
+        <a class="button-white"
+           href="<?= get_field('magasin-button', 'option') ?>"><?= get_field('magasin-button-name', 'option') ?></a>
     </div>
 </header>

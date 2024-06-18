@@ -13,8 +13,8 @@
                 $title = get_sub_field('title');
                 ?>
                 <article role="article">
-                    <h3 role="heading" aria-level="2"><?= $title?></h3>
-                    <p><?= $text?></p>
+                    <h3 role="heading" aria-level="2"><?= $title ?></h3>
+                    <p><?= $text ?></p>
                 </article>
             <?php endwhile;
         endif; ?>

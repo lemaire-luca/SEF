@@ -15,7 +15,8 @@
             </ul>
         </nav>
         <div itemscope itemtype="https://schema.org/Organization" class="bottom__navigation__infos">
-            <h3 role="heading" aria-level="3">Service d'Entraide Familiale <abbr title=" association sans but lucratif">asbl</abbr></h3>
+            <h3 role="heading" aria-level="3">Service d'Entraide Familiale <abbr title=" association sans but lucratif">asbl</abbr>
+            </h3>
             <ul>
                 <li itemprop="streetAddress">Rue du Marché 33, 4500 HUY</li>
                 <li itemprop="telephone">085 / 21 57 52</li>
@@ -38,6 +39,6 @@
     </div>
     <div class="bottom__information">
         <p>© 2024 Service d'entraide familiale Huy. Tous droits réservés.</p>
-        <a href="<?= get_field('confidential', 'option')?>">Politique de confidentialité</a>
+        <a href="<?= get_field('confidential', 'option') ?>">Politique de confidentialité</a>
     </div>
 </section>

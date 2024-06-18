@@ -1,27 +1,32 @@
-.more-infos{
-    text-align: center;
-    padding-bottom: 3.125rem;
-    h2{
-        font-size: 1.875rem;
-    }
-    p{
-        padding: 1.875rem 0 3.125rem;
-        font-size: 1.125rem;
-    }
-    .button{
-        width: max-content;
-    }
+.more-infos {
+  text-align: center;
+  padding-bottom: 3.125rem;
+
+  h2 {
+    font-size: 1.875rem;
+  }
+
+  p {
+    padding: 1.875rem 1.25rem 3.125rem;
+    font-size: 1.125rem;
+  }
+
+  .button {
+    width: max-content;
+  }
 }
 
-@media (min-width: 1000px){
-    .more-infos{
-        margin: 7.5rem 0 9.375rem;
-        padding-bottom: 0;
-        h2{
-            font-size: 3.75rem;
-        }
-        p{
-            font-size: 1.25rem;
-        }
+@media (min-width: 1000px) {
+  .more-infos {
+    margin: 7.5rem 0 9.375rem;
+    padding-bottom: 0;
+
+    h2 {
+      font-size: 3.75rem;
     }
+
+    p {
+      font-size: 1.25rem;
+    }
+  }
 }
