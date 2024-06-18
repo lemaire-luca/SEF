@@ -1,0 +1,27 @@
+/*SETTINGS*/
+@import "settings/reset";
+
+/*PAGES*/
+@import "pages/home";
+@import "pages/contact";
+@import "pages/about";
+@import "pages/don";
+@import "pages/magasin";
+@import "pages/404";
+@import "pages/single";
+@import "pages/actuality";
+@import "pages/confidential";
+
+/*SECTION*/
+@import "section/main";
+@import "section/header";
+@import "section/landing";
+@import "section/information";
+@import "section/help";
+@import "section/footer";
+
+/*COMPONENTS*/
+@import "components/more-infos";
+@import "components/faq";
+@import "components/more-actuality";
+@import "components/formulaire";
