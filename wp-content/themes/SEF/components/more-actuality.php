@@ -1,5 +1,5 @@
 <section id="actuality" class="actuality">
-    <h2>Quelques actualités</h2>
+    <h2 role="heading" aria-level="2">Quelques actualités</h2>
     <div class="actuality__container">
     <?php if (have_rows('actuality-list', 'option')) :
         while (have_rows('actuality-list', 'option')) : the_row();
@@ -10,11 +10,11 @@
             $span = get_sub_field('span');
             ?>
                 <a href="<?= $link ?>">
-                    <article class="actuality__container__article">
+                    <article role="article" class="actuality__container__article">
                         <img src="<?= $image ?>" alt="" width="396.66" height="290">
                         <div class="actuality__container__article__infos">
                             <span><?= $span ?></span>
-                            <h3><?= $title ?></h3>
+                            <h3 role="heading" aria-level="3"><?= $title ?></h3>
                             <p><?= $text ?></p>
                         </div>
                     </article>
