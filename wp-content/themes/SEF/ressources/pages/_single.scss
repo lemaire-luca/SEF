@@ -1,0 +1,33 @@
+.single{
+  &__infos{
+    padding: 0 1.875rem;
+    h3{
+      padding: 6.25rem 0 3.125rem;
+      font-size: 2.5rem;
+      color: #B9BDE1;
+    }
+    hgroup{
+      font-weight: bold;
+    }
+    span, p{
+      font-size: 1.25rem;
+    }
+    p{
+      padding-bottom: 1.875rem;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .single{
+    &__infos{
+      padding: 0 15.3125rem;
+      h3{
+        font-size: 3.125rem;
+        padding: 0 0 3.125rem;
+      }
+      hgroup p{
+        padding-bottom: 6.25rem;
+      }
+    }
+  }
+}
