@@ -35,7 +35,7 @@
         <span></span>
     </label>
         <a href="<?= get_field('logo-link', 'option')?>">
-            <p>SEF</p>
+            <p><abbr title="Service d'entraide familiale">SEF</abbr></p>
         </a>
         <ul class="navigation__list">
             <?php if (have_rows('nav-list', 'options')) :
