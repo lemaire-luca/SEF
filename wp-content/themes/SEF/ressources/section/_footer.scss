@@ -1,7 +1,7 @@
 .bottom{
     background-color: #DCECFC;
     &__navigation{
-        padding: 50px 0;
+        padding: 3.125rem 0;
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -9,7 +9,7 @@
             display: flex;
             flex-direction: column;
             row-gap: 0.9375rem;
-            padding-bottom: 50px;
+            padding-bottom: 3.125rem;
             li{
                 font-size: 1.25rem;
             }
@@ -33,7 +33,7 @@
         align-items: center;
         flex-direction: column;
         text-align: center;
-        padding: 20px;
+        padding: 1.25rem;
     }
 }
 .bottom__navigation__infos, .bold{
