@@ -27,7 +27,7 @@
 </noscript>
 <header id="navigation" class="navigation">
     <h2 class="hidden" role="heading" aria-level="2">Navigation principale</h2>
-    <nav>
+    <nav role="navigation">
     <input type="checkbox" id="burger-toggle">
     <label for="burger-toggle" class="burger_menu" id="burger-menu">
         <span></span>

@@ -2,12 +2,12 @@
 <?php if (have_posts()): while (have_posts()): the_post(); ?>
 <section id="single" class="single">
     <div class="landing-illustration">
-        <h2><?= get_field('landing-title')?></h2>
+        <h2 role="heading" aria-level="2"><?= get_field('landing-title')?></h2>
         <img src="<?= get_field('landing-illustration')?>" alt="">
     </div>
     <div class="single__infos">
         <hgroup>
-            <h3><?= get_field('single-title')?></h3>
+            <h3 role="heading" aria-level="3"><?= get_field('single-title')?></h3>
             <p><?= get_field('single-span')?></p>
         </hgroup>
         <?php if (have_rows('single-content')) :
