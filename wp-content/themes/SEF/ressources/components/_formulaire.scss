@@ -1,0 +1,39 @@
+.num, .mail{
+  color: #B9BDE1;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.25rem;
+  box-sizing: border-box;
+  background-color: #F5F5F5;
+  margin: 0 0.5rem 3.125rem;
+  border-radius: 1.8125rem;
+  padding: 1.25rem 3.125rem;
+  font-family: Helvetica, Arial, serif;
+  ::placeholder{
+    font-family: Helvetica, Arial, serif;
+  }
+}
+#name, #mobile, #email, select{
+  padding: 0.9375rem 0 0.9375rem 0.625rem;
+}
+
+input, textarea, select{
+  border-radius: 0.5rem;
+  margin: 0.9375rem 0 0.625rem;
+  width: 100%;
+  border: 0.125rem solid #000;
+}
+
+label{
+  padding-bottom: 0.9375rem;
+}
+
+@media (min-width: 900px) {
+  .form {
+    margin: 3.125rem 0;
+    padding: 1.875rem 6.5625rem;
+  }
+}
