@@ -3,13 +3,13 @@
 <?php if (have_posts()): while (have_posts()): the_post(); ?>
     <section id="landing-page" class="landing-page">
         <div class="landing-illustration">
-            <h2><?= get_field('landing-title')?></h2>
+            <h2 role="heading" aria-level="2"><?= get_field('landing-title')?></h2>
             <img src="<?= get_field('landing-illustration')?>" alt="">
         </div>
     </section>
     <section id="services" class="services">
         <div class="services__infos">
-            <h2>Nos services</h2>
+            <h2 role="heading" aria-level="2">Nos services</h2>
             <p>L’objectif de l’<abbr title=" association sans but lucratif">asbl</abbr> :
 
                 L'insertion ou la réinsertion sociale d'adultes et de familles en difficulté
@@ -25,7 +25,7 @@
                         $title = get_sub_field('title');
                         ?>
                     <article>
-                        <h3><?= $title?></h3>
+                        <h3 role="heading" aria-level="3"><?= $title?></h3>
                         <p><?= $text?></p>
                     </article>
                     <?php endwhile;
@@ -34,7 +34,7 @@
     </section>
     <section id="mission" class="mission">
         <div class="mission__left">
-            <h2>Notre mission</h2>
+            <h2 role="heading" aria-level="2">Notre mission</h2>
             <p>
                 Le <abbr title="Service d'entraide familiale">SEF</abbr> a pour mission de fournir un soutien essentiel aux personnes en situation précaire. Nous nous
                 engageons à offrir des solutions de logement sûres et abordables, tout en favorisant l'inclusion sociale et
@@ -53,11 +53,11 @@
             <img src="<?= get_field('history-img')?>" alt="">
         </div>
         <div class="history__right">
+            <h2 role="heading" aria-level="2">Notre histoire</h2>
             <?php if (have_rows('history')) :
                 while (have_rows('history')) :the_row();
                     $text = get_sub_field('text');
                     ?>
-                    <h2>Notre histoire</h2>
                     <p><?= $text ?></p>
                 <?php endwhile;
             endif; ?>
