@@ -3,7 +3,7 @@
 <?php if (have_posts()): while (have_posts()): the_post(); ?>
     <section id="landing-page" class="landing-page">
         <div class="landing-illustration">
-            <h2><?= get_field('landing-title')?></h2>
+            <h2 role="heading" aria-level="2"><?= get_field('landing-title')?></h2>
             <img src="<?= get_field('landing-illustration')?>" alt="">
         </div>
     </section>
@@ -18,12 +18,12 @@
                     ?>
         <div class="home__first">
                 <article class="home__first__infos">
-                    <h2><?= $title ?></h2>
+                    <h2 role="heading" aria-level="2"><?= $title ?></h2>
                     <p><?= $text ?></p>
                     <a class="button" href="<?= $link ?>"><?= $name?></a>
                 </article>
                 <div class="home__first__img">
-                    <img src="<?= $image ?>" alt="" width="447" height="598">
+                    <img src="<?= $image ?>" alt="">
                 </div>
         </div>
                 <?php endwhile;
