@@ -33,8 +33,11 @@
                 </p>
             </div>
         </div>
-        <div class="bottom_navigation__follow">
+        <div class="bottom__navigation__follow">
             <p>Nous suivre</p>
+            <a href="<?= get_field('facebook-link', 'option')?>">
+                <img src="<?= get_field('facebook-image', 'option')?>" alt="">
+            </a>
         </div>
     </div>
     <div class="bottom__information">
