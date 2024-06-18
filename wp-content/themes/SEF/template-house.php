@@ -8,6 +8,7 @@
         </div>
     </section>
     <section id="home" class="home">
+        <h2 role="heading" aria-level="2" class="hidden">Home</h2>
         <?php if (have_rows('house-infos')) :
             while (have_rows('house-infos')) :the_row();
                 $infos_1 = get_sub_field('infos_1');

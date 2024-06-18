@@ -97,3 +97,15 @@ h1, h2, h3 {
     scale: 1.1;
   }
 }
+
+@media (min-width: 800px) {
+  .nav_hidden:not(:focus):not(:active) {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+}

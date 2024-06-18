@@ -1,6 +1,8 @@
-<section id="bottom" class="bottom">
+<footer id="bottom" class="bottom">
+    <h2 role="heading" aria-level="2" class="hidden">Footer</h2>
     <div class="bottom__navigation">
         <nav role="navigation">
+            <h3 role="heading" aria-level="3" class="hidden">Navigation secondaire</h3>
             <ul class="bottom__navigation__list">
                 <?php if (have_rows('nav-list', 'options')) :
                     while (have_rows('nav-list', 'options')) :the_row();
@@ -44,4 +46,4 @@
         <p>© 2024 Service d'entraide familiale Huy. Tous droits réservés.</p>
         <a href="<?= get_field('confidential', 'option') ?>">Politique de confidentialité</a>
     </div>
-</section>
+</footer>

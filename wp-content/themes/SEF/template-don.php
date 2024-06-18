@@ -8,6 +8,7 @@
         </div>
     </section>
     <section id="option-don" class="option-don">
+        <h2 role="heading" aria-level="2" class="hidden">Option</h2>
         <?php if (have_rows('option-don')) :
             while (have_rows('option-don')) :the_row();
                 $text = get_sub_field('text');
