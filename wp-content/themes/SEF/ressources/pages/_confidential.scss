@@ -2,37 +2,37 @@
   &__title{
     text-align: center;
     h2{
-      padding: 50px 0;
-      font-size: 40px;
+      padding: 3.125rem 0;
+      font-size: 2.5rem;
     }
     span{
       color: #B9BDE1;
     }
   }
   &__container{
-    padding: 0 20px;
+    padding: 0 1.25rem;
     &__infos{
-      padding-bottom: 50px;
+      padding-bottom: 3.125rem;
       h3{
-        font-size: 30px;
-        padding: 30px 0;
+        font-size: 1.875rem;
+        padding: 1.875rem 0;
       }
     }
   }
 }
 @media (min-width: 1200px) {
-.confidential{
-  &__title{
-    h2{
-      font-size: 80px;
-      padding-top: 100px;
+  .confidential{
+    &__title{
+      h2{
+        font-size: 5rem;
+        padding-top: 6.25rem;
+      }
+    }
+    &__container{
+      padding: 3.125rem 12.5rem;
+      p{
+        max-width: 43.75rem;
+      }
     }
   }
-  &__container{
-    padding: 50px 200px;
-    p{
-      max-width: 700px;
-    }
-  }
-}
 }
