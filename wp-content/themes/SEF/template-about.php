@@ -10,10 +10,10 @@
     <section id="services" class="services">
         <div class="services__infos">
             <h2>Nos services</h2>
-            <p>L’objectif de l’asbl :
+            <p>L’objectif de l’<abbr title=" association sans but lucratif">asbl</abbr> :
 
                 L'insertion ou la réinsertion sociale d'adultes et de familles en difficulté
-                Le temps passé au SEF doit être mis à profit par chacun pour règler
+                Le temps passé au <abbr title="Service d'entraide familiale">SEF</abbr> doit être mis à profit par chacun pour règler
                 ses questions administratives, repenser sa façon de vivre avec les
                 autres et préparer son départ. Afin, si possible, de ne pas revenir...
             </p>
@@ -36,7 +36,7 @@
         <div class="mission__left">
             <h2>Notre mission</h2>
             <p>
-                Le SEF a pour mission de fournir un soutien essentiel aux personnes en situation précaire. Nous nous
+                Le <abbr title="Service d'entraide familiale">SEF</abbr> a pour mission de fournir un soutien essentiel aux personnes en situation précaire. Nous nous
                 engageons à offrir des solutions de logement sûres et abordables, tout en favorisant l'inclusion sociale et
                 l'autonomie des bénéficiaires. En collaboration avec divers partenaires et à travers des programmes
                 d'accompagnement personnalisés, le SEF œuvre pour améliorer les conditions de vie, prévenir l'exclusion
@@ -45,12 +45,12 @@
             </p>
         </div>
         <div class="mission__right">
-            <img src="<?= get_field('mission-img')?>" alt="" width="632" height="421">
+            <img src="<?= get_field('mission-img')?>" alt="">
         </div>
     </section>
     <section id="history" class="history">
         <div class="history__left">
-            <img src="<?= get_field('history-img')?>" alt="" width="632" height="422">
+            <img src="<?= get_field('history-img')?>" alt="">
         </div>
         <div class="history__right">
             <?php if (have_rows('history')) :
