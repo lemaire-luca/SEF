@@ -9,13 +9,13 @@ le plus besoin.
 
 ## Pages du Site
 
---  **Accueil**
---  **Hébergement**
---  **Actualités**
---  **Qui sommes-nous?**
---  **Contact**
---  **Soutiens**
---  **Magasin**
+-  **Accueil**
+-  **Hébergement**
+-  **Actualités**
+-  **Qui sommes-nous?**
+-  **Contact**
+-  **Soutiens**
+-  **Magasin**
 
 ## Fonctionnalités du Site
 
