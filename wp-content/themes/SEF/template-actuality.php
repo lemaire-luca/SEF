@@ -10,7 +10,6 @@
 <section id="actuality-page" class="actuality-page">
     <?php if (have_rows('actuality-page')) :
         while (have_rows('actuality-page')) :the_row();
-            $text = get_sub_field('text');
             $title = get_sub_field('title');
             $link = get_sub_field('link');
             $image = get_sub_field('image');
@@ -20,7 +19,6 @@
                     <img src="<?= $image ?>" alt="">
                     <div class="actuality-page__container__infos">
                         <h2 role="heading" aria-level="2"><?= $title ?></h2>
-                        <!--<p><?php /*= $text */?></p>-->
                     </div>
                 </a>
             </div>
