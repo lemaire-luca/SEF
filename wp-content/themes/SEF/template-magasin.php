@@ -3,7 +3,7 @@
 <?php if (have_posts()): while (have_posts()): the_post(); ?>
 <section id="shop" class="shop">
     <div class="landing-illustration">
-        <h2><?= get_field('landing-title')?></h2>
+        <h2 role="heading" aria-level="2"><?= get_field('landing-title')?></h2>
         <img src="<?= get_field('landing-illustration')?>" alt="">
     </div>
     <div class="shop__content">
@@ -14,7 +14,7 @@
                 ?>
                 <div class="shop__container">
                     <div class="shop__container__infos">
-                        <h3><?= $title ?></h3>
+                        <h3 role="heading" aria-level="3"><?= $title ?></h3>
                         <span><?= $span?></span>
                         <div class="shop__container__infos__list">
                             <?php if (have_rows('date-list')) :
