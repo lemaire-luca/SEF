@@ -16,11 +16,11 @@
             $image = get_sub_field('image');
             ?>
             <div class="actuality-page__container">
-                <a class="" href="<?= $link ?>">
+                <a href="<?= $link ?>">
                     <img src="<?= $image ?>" alt="">
                     <div class="actuality-page__container__infos">
                         <h2 role="heading" aria-level="2"><?= $title ?></h2>
-                        <p><?= $text ?></p>
+                        <!--<p><?php /*= $text */?></p>-->
                     </div>
                 </a>
             </div>

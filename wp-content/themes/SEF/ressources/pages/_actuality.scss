@@ -1,0 +1,58 @@
+.actuality-page{
+  display: grid;
+  row-gap: 1.875rem;
+  width: 18.75rem;
+  margin: 0 auto;
+  padding: 3.125rem 0;
+  &__container{
+    border-radius: 1.8125rem;
+    padding:2.1875rem 1.125rem 2.5rem;
+    &:nth-child(even){
+      background-color: #fff;
+      border: 0.125rem solid #000;
+      box-shadow: 0 0.625rem #000;
+  }
+    &:nth-child(odd){
+      background-color: #B9BDE1;
+      box-shadow: 0 0.625rem #B9BDE1;
+    }
+    img{
+      width: 16.5rem;
+      height: auto;
+    }
+    &__infos{
+      h2{
+        text-align: center;
+        font-size: 1.563rem;
+        padding-top: 1.25rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .actuality-page{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0 7.1875rem;
+    gap: 6.25rem 3.125rem;
+    width: 23.375rem;
+    transition: 0.5s ease;
+    margin: inherit;
+    :hover{
+      transition: 0.5s ease;
+    }
+    &__container{
+      img{
+        width: 20.875rem;
+      }
+      &__infos{
+        padding: 0 2.9375rem;
+        h2{
+          font-size: 1.875rem;
+          padding-top: 1.5625rem;
+        }
+      }
+    }
+  }
+}
