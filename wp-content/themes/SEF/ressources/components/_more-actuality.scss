@@ -1,0 +1,65 @@
+.actuality{
+  padding: 6.25rem 0;
+  h2{
+    text-align: center;
+    font-size: 2.1875rem;
+    padding-bottom: 3.125rem;
+  }
+  &__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.875rem;
+    margin-bottom: 3.125rem;
+    padding: 0 1.5rem;
+    &__article{
+      max-width: 22.688rem;
+      img{
+        border-radius: 1.8125rem 1.8125rem 0 0;
+        max-width: 100%;
+        height: auto;
+      }
+      &__infos{
+        background-color: #B9BDE1;
+        border-radius: 0 0 1.8125rem 1.8125rem;
+        padding: 2.5rem 1.5rem 3.125rem;
+        :nth-child(odd){
+
+        }
+        span{
+          font-size: 1.25rem;
+        }
+        h3{
+          font-size: 1.5625rem;
+          font-weight: bold;
+          padding: 1.25rem 0 1.5625rem;
+        }
+      }
+    }
+  }
+}
+
+.actuality .button{
+  width: max-content;
+}
+
+@media (min-width: 1200px){
+  .actuality{
+    &__container{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      padding: 3.125rem 4.75rem;
+      a{
+        max-width: 25.0625rem;
+        .actuality__container__article{
+          max-width: 25.0625rem;
+          &:hover{
+            scale: 1.07;
+            transition: 0.7s ease;
+          }
+        }
+      }
+    }
+  }
+}
