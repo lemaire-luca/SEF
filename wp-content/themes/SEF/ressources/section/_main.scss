@@ -3,6 +3,27 @@
   src: url("../../font/Ubuntu-Regular.ttf");
 }
 
+@keyframes transition {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
